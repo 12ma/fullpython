@@ -1,21 +1,21 @@
 tc=int(input())
 for i in range(tc):
-    n=int(input())
-    l=list(map(int,input().split()))
+    a=int(input())
+    b=list(map(int,input().split()))
     count=0
-    while all(j!=0 for j in l):
-            for k in l:
-                    if k%2!=0:
-                            k=k-1
-                            count=count+1
-                            print(count)
 
+    while not all(x==0 for x in b):
+            if all(t%2==0 for t in b):
+                    b=[e//2 for e in b]
+                    count+=1
+                    print(b)
 
-            if all(m%2==0 and m!=0 for m in l):
-                    l=[o/2 for o in l]
-                    count=count+1
+            else:
+                    for f in b:
+                            if f%2!=0:
+                                    f=f-1
+                                    count+=1
+                                    print(count)
+                    print(b)
 
-
-        
-    print(count)        
-    
+    print(count)

@@ -1,7 +1,7 @@
 from math import sqrt,ceil
 def isPrime(p):
     a=True
-    for k in range(2,int(ceil(sqrt(p)))):
+    for k in range(2,int(ceil(sqrt(p)+1))):
         if p%k==0:
             a=False
     return(a)        

@@ -10,8 +10,7 @@ else:
         
         if mtn<0:
             mtn=0
-        elif mtn<m:
-            pass
+        
         else:
             m=mtn    
     print(m)    
